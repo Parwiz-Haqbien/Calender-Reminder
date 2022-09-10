@@ -70,5 +70,13 @@ body {
     transition: all 0.3s ease-in-out;
   }
 
+  .col-12 {
+  
+  position: relative;
+  width: 100%;
+  height: 20rem;
+   
+  }
+
   
   
