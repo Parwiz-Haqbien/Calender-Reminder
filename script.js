@@ -7,6 +7,8 @@ function displayTime() {
     console.log(rightNow)
 }
 
+console.log(dayDisplayEl)
+
 
 
 
