@@ -16,6 +16,7 @@ var rightNow = moment().format('dddd, MMMM Do');
     console.log(btnDisplay)
 
 // 
+   let myObj_Serialized = JSON.stringify(this.id)
 
     btnDisplay.on('click' , function(){
         console.log(this)
@@ -29,20 +30,6 @@ var rightNow = moment().format('dddd, MMMM Do');
         }
         console.log(inputEl)
         localStorage.setItem(this.id , inputEl.val())
-    })
-      btnDisplay.addEventListener("click" , function(event) {
-        event.preventDefualt();
-        var user = {
-            nineClock: nineTime.val.trim(),
-            tenClock: tenTime.val.trim(),
-            elevenClock: elvenTime.val.trim(),
-            twelveClock: twelveTime.val.trim(),
-            oneClock: oneTime.val.trim(),
-            twoClock: twoTime.val.trim(),
-            threeClock: threeTime.val.trim(),
-            fourClock: fourTime.val.trim(),
-            fiveClock: fiveTime.val.trim()
-        };
-        localStorage.setItem("user" ,JSON.stringify(user));
-      })
-    
+
+        let inputEl = JSON.parse(localStorage.getItem("inputEl"));
+    });
