@@ -30,15 +30,19 @@ var rightNow = moment().format('dddd, MMMM Do');
         console.log(inputEl)
         localStorage.setItem(this.id , inputEl.val())
     })
-
-    var user = {
-        nineClock: nineTime.val.trm(),
-        tenClock: tenTime.val.trm(),
-        elevenClock: elvenTime.val.trm(),
-        twelveClock: twelveTime.val.trm(),
-        oneClock: oneTime.val.trm(),
-        twoClock: twoTime.val.trm(),
-        threeClock: threeTime.val.trm(),
-        fourClock: fourTime.val.trm(),
-        fiveClock: fiveTime.val.trm(),
-    }
+      btnDisplay.addEventListener("click" , function(event) {
+        event.preventDefualt();
+        var user = {
+            nineClock: nineTime.val.trim(),
+            tenClock: tenTime.val.trim(),
+            elevenClock: elvenTime.val.trim(),
+            twelveClock: twelveTime.val.trim(),
+            oneClock: oneTime.val.trim(),
+            twoClock: twoTime.val.trim(),
+            threeClock: threeTime.val.trim(),
+            fourClock: fourTime.val.trim(),
+            fiveClock: fiveTime.val.trim()
+        };
+        localStorage.setItem("user" ,JSON.stringify(user));
+      })
+    
