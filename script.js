@@ -15,13 +15,14 @@ var rightNow = moment().format('dddd, MMMM Do');
 
     console.log(btnDisplay)
 
+// 
 
     btnDisplay.on('click' , function(){
         console.log(this)
         console.log(this.id)
         var inputEl;
         var realnumber = parseInt(this.id)
-        if(realnumber +12<12) {
+        if(realnumber >=6) {
             inputEl = $("#"+this.id + "AM")
         } else{
             inputEl = $("#"+this.id + "PM")
@@ -30,3 +31,14 @@ var rightNow = moment().format('dddd, MMMM Do');
         localStorage.setItem(this.id , inputEl.val())
     })
 
+    var user = {
+        nineClock: nineTime.val.trm(),
+        tenClock: tenTime.val.trm(),
+        elevenClock: elvenTime.val.trm(),
+        twelveClock: twelveTime.val.trm(),
+        oneClock: oneTime.val.trm(),
+        twoClock: twoTime.val.trm(),
+        threeClock: threeTime.val.trm(),
+        fourClock: fourTime.val.trm(),
+        fiveClock: fiveTime.val.trm(),
+    }
