@@ -1,3 +1,24 @@
-# Calender-Reminder
+# Work-Day-Scheduler
 
-with the the current day the code the id was already given in the html so i created the variable and got the currentday Id. with this i created another variable and inside the the variable I used moment to have to the current day and date. I then created a timetable with the office hours which inside of is given and id of every hour which is used in  the js With local storage I was a bit confused so I get the item user and set it to this.id. I then used the btnDisplay to creat a clikc function whihc if the number is greater than or equal to 6 it should be am in the console log and if not then it should be pm. and now setting the locol storage with this,id and inputEl.val to get the value of the hours and the i used json.parse to remove the json from a string. I just had a bit of issue this week hence why I couldnt fully finsh off and fix the bugs in this code
+## Table of Contents
+- [Description](#description)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contribution](#contribution)
+
+## Description
+This repository contains code for a calendar application that allows users to enter events into time blocks.
+
+## Installation
+N/A
+
+## Usage
+Enter events on the webpage by selecting a time block and clicking "save." Edit events by clicking on the time block and updating the text.
+
+
+![App Screenshot](https://github.com/Parwiz-Haqbien/Work-Day-Scheduler/blob/main/assets/img/ssOfPage.png?raw=true)
+
+## Contribution
+Made by Parwiz Haqbien
+
+page url(https://parwiz-haqbien.github.io/Work-Day-Scheduler/)
