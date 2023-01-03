@@ -14,3 +14,9 @@ function classSelection(hour) {
     return "present";
   }
 }
+
+function save(schedule) {
+    const memo = localStorage.memo ? JSON.parse(localStorage.memo) : {};
+    memo[`memo${schedule.data.hour}`] = $(`#${schedule.data.hour}`)[0].value;
+    localStorage.setItem("memo", JSON.stringify(memo));
+  }
